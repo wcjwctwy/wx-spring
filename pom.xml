@@ -6,7 +6,11 @@
 	<groupId>cn.sf80.wx</groupId>
 	<artifactId>wx-spring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<modules>
+		<module>wx-check-token</module>
+		<module>wx-spring-common</module>
+	</modules>
+	<packaging>pom</packaging>
 
 	<name>wx-spring</name>
 	<description>Demo project for Spring Boot</description>
