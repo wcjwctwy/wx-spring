@@ -1,4 +1,4 @@
-package cn.sf80.wx.check.token;
+package cn.sf80.wx.check.token.utils;
 
 import java.io.InputStream;
 import java.util.HashMap;
@@ -7,6 +7,7 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
+import cn.sf80.wx.check.token.pojo.TextMessage;
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
@@ -42,7 +43,7 @@ public class MessageUtil {
         return map;  
     }  
 
-    public static String textMessageToXml(TextMessage textMsg) {  
+    public static String textMessageToXml(TextMessage textMsg) {
         XStream xstream = new XStream();  
         // 将根元素替换成<xml>，默认根元素为<类名>  
         xstream.alias("xml", textMsg.getClass());  

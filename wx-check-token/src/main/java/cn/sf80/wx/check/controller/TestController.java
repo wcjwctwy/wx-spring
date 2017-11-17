@@ -1,8 +1,8 @@
 package cn.sf80.wx.check.controller;
 
-import cn.sf80.wx.check.token.CheckoutUtil;
-import cn.sf80.wx.check.token.MessageUtil;
-import cn.sf80.wx.check.token.TextMessage;
+import cn.sf80.wx.check.token.utils.CheckoutUtil;
+import cn.sf80.wx.check.token.utils.MessageUtil;
+import cn.sf80.wx.check.token.pojo.TextMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,4 +1,4 @@
-package cn.sf80.wx.check.token;
+package cn.sf80.wx.check.token.utils;
 
 import java.security.MessageDigest;
 import java.util.Arrays;

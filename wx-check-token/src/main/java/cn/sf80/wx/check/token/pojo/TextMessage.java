@@ -1,4 +1,4 @@
-package cn.sf80.wx.check.token;
+package cn.sf80.wx.check.token.pojo;
 public class TextMessage {  
     /** 开发者微信号 **/  
     private String ToUserName;  

@@ -16,10 +16,10 @@
         <groupId>commons-codec</groupId>
         <artifactId>commons-codec</artifactId>
     </dependency>
-    <dependency>
-        <groupId>io.zhijian</groupId>
-        <artifactId>weixin-common</artifactId>
-    </dependency>
+    <!--<dependency>-->
+        <!--<groupId>io.zhijian</groupId>-->
+        <!--<artifactId>weixin-common</artifactId>-->
+    <!--</dependency>-->
     <dependency>
         <groupId>com.jfinal</groupId>
         <artifactId>jfinal-weixin</artifactId>
