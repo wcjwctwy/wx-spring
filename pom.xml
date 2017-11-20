@@ -7,9 +7,10 @@
 	<artifactId>wx-spring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<modules>
-		<module>wx-check-token</module>
+		<module>wx-spring-boot-starter</module>
 		<module>wx-spring-common</module>
-	</modules>
+        <module>wx-spring-test</module>
+    </modules>
 	<packaging>pom</packaging>
 
 	<name>wx-spring</name>
