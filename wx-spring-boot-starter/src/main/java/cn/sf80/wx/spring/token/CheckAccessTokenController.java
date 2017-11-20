@@ -19,7 +19,7 @@ public class CheckAccessTokenController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CheckAccessTokenController.class);
 
-    @GetMapping("${wx.context.path}/check")
+    @GetMapping("${wx.context.path}")
     public String check(String signature,String timestamp,String nonce,String echostr){
         LOGGER.debug("signature:"+signature);
         LOGGER.debug("timestamp:"+timestamp);
@@ -33,7 +33,7 @@ public class CheckAccessTokenController {
         }
     }
 
-    @PostMapping("${wx.context.path}/check")
+    @PostMapping("${wx.context.path}")
     public String check(HttpServletRequest request){
         Enumeration<String> parameterNames = request.getParameterNames();
         while (parameterNames.hasMoreElements()){

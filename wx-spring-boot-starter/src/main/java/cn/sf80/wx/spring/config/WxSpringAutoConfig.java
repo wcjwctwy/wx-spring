@@ -7,10 +7,12 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @EnableConfigurationProperties(WxPlatformConfig.class)
 @ConditionalOnBean(WxUserInfoHandler.class)
+@PropertySource("classpath:wx.properties")
 public class WxSpringAutoConfig {
 
     @Autowired
@@ -22,10 +24,4 @@ public class WxSpringAutoConfig {
         wxSpringServer.setWxPlatformConfig(wxPlatformConfig);
         return wxSpringServer;
     }
-//    @Bean
-//    public WxUserInfoHandler WxUserInfoHandler(){
-//        return wxUserInfo -> System.out.println("Refresh_token  :"+wxUserInfo.getRefresh_token());
-//    }
-
-
 }

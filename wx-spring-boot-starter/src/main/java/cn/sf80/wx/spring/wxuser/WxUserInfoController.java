@@ -51,7 +51,7 @@ public class WxUserInfoController {
     }
 //第二步：通过code换取网页授权access_token
     //特殊的网页授权access_token,与基础支持中的access_token（该access_token用于调用其他接口）不同
-    @RequestMapping("${wx.context.path}/login")
+    @RequestMapping("${wx.context.path}/wxredirecturl")
     public String login(String code, String state, RedirectAttributes redirectAttributes){
         LOGGER.debug("code:"+code+"  state:"+state);
         String url = UrlUtils.getWebAccessTokenUrl(wxSpringServer.getWxPlatformConfig(),code);
