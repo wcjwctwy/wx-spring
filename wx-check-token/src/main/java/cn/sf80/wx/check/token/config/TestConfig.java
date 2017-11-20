@@ -1,7 +1,9 @@
 package cn.sf80.wx.check.token.config;
 
+import cn.sf80.wx.check.token.WxUserInfoHandler;
 import cn.sf80.wx.check.token.pojo.AccessTokenEntity;
 import cn.sf80.wx.check.token.pojo.WxPlatformConfig;
+import cn.sf80.wx.check.token.pojo.WxUserInfo;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -26,6 +28,11 @@ public class TestConfig {
     @Bean
     public WxPlatformConfig wxPlatformConfig(){
         return new WxPlatformConfig();
+    }
+
+    @Bean
+    public WxUserInfoHandler WxUserInfoHandler(){
+        return wxUserInfo -> System.out.println("nickname:"+wxUserInfo.getNickname());
     }
 
 

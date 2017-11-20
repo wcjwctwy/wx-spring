@@ -1,4 +1,4 @@
-package cn.sf80.wx.check.controller;
+package cn.sf80.wx.check.token.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package cn.sf80.wx.check.controller;
+package cn.sf80.wx.check.token.controller;
 
 import cn.sf80.wx.check.token.utils.CheckoutUtil;
 import cn.sf80.wx.check.token.utils.MessageUtil;
